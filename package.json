@@ -128,7 +128,7 @@
   "devDependencies": {
     "babel-cli": "6.18.0",
     "babel-core": "6.18.2",
-    "babel-eslint": "7.1.0",
+    "babel-eslint": "7.2.2",
     "babel-loader": "6.2.8",
     "babel-plugin-check-es2015-constants": "6.8.0",
     "babel-plugin-transform-es2015-arrow-functions": "6.8.0",
@@ -155,7 +155,7 @@
     "bignumber.js": "3.0.1",
     "chai": "3.5.0",
     "cross-env": "1.0.7",
-    "eslint": "2.10.1",
+    "eslint": "5.4.0",
     "eslint-config-airbnb": "9.0.1",
     "eslint-import-resolver-webpack": "0.2.4",
     "eslint-plugin-import": "1.8.0",
@@ -188,27 +188,20 @@
       "sourceType": "module"
     },
     "rules": {
-      "import/no-unresolved": 2,
+      "arrow-body-style": [
+        2,
+        "as-needed"
+      ],
       "comma-dangle": [
         2,
         "always-multiline"
       ],
-      "indent": [
-        2,
-        2,
-        {
-          "SwitchCase": 1
-        }
-      ],
-      "no-console": 1,
+      "import/no-unresolved": 2,
       "max-len": 0,
-      "prefer-template": 2,
-      "no-use-before-define": 0,
       "newline-per-chained-call": 0,
-      "arrow-body-style": [
-        2,
-        "as-needed"
-      ]
+      "no-console": 1,
+      "no-use-before-define": 0,
+      "prefer-template": 2
     }
   },
   "pre-commit": "build"
