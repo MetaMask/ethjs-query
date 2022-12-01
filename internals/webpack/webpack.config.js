@@ -13,7 +13,7 @@ var config = {                    // eslint-disable-line
       },
       {
         test: /\.json$/,
-        loader: 'json',
+        loader: 'json-loader',
       },
     ],
   },
@@ -52,7 +52,6 @@ if (env === 'production') {
       screw_ie8: false,
     },
   }));
-  config.plugins.push(new webpack.optimize.DedupePlugin());
 }
 
 module.exports = config;
