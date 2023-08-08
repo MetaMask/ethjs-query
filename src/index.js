@@ -36,7 +36,6 @@ function generateFnFor(rpcMethodName, methodObject) {
   return function outputMethod() {
     let callback = null; // eslint-disable-line
     let inputs = null; // eslint-disable-line
-    let inputError = null; // eslint-disable-line
     const self = this;
     const args = [].slice.call(arguments); // eslint-disable-line
     const protoMethodName = rpcMethodName.replace('eth_', ''); // eslint-disable-line
@@ -99,8 +98,12 @@ function generateFnFor(rpcMethodName, methodObject) {
           }
         })
         .catch(error => {
-          const outputError = new Error(`[ethjs-query] while formatting outputs from RPC '${JSON.stringify(error, null, this.options.jsonSpace)}'`);
-          reject(outputError);
+          let errorMsg = 'RPC error';
+          if (error.value) {
+            errorMsg += error.value.code ? ` (code ${error.value.code})` : '';
+            errorMsg += error.value.message ? `: "${error.value.message}"` : '';
+          }
+          reject(new Error(errorMsg));
           return;
         });
       });
