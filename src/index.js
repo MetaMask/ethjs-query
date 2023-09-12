@@ -86,22 +86,14 @@ function generateFnFor(rpcMethodName, methodObject) {
         this.rpc.sendAsync({ method: rpcMethodName, params: inputs })
         .then(result => {
           // format result
-          try {
-            this.log(`attempting method formatting for '${protoMethodName}' with raw outputs: ${JSON.stringify(result, null, this.options.jsonSpace)}`);
-            const methodOutputs = format.formatOutputs(rpcMethodName, result);
-            this.log(`method formatting success for '${protoMethodName}' formatted result: ${JSON.stringify(methodOutputs, null, this.options.jsonSpace)}`);
-            resolve(methodOutputs);
-            return;
-          } catch (outputFormattingError) {
-            const outputError = new Error(`[ethjs-query] while formatting outputs from RPC '${JSON.stringify(result, null, this.options.jsonSpace)}' for method '${protoMethodName}' ${outputFormattingError}`);
-            reject(outputError);
-            return;
-          }
+          this.log(`attempting method formatting for '${protoMethodName}' with raw outputs: ${JSON.stringify(result, null, this.options.jsonSpace)}`);
+          const methodOutputs = format.formatOutputs(rpcMethodName, result);
+          this.log(`method formatting success for '${protoMethodName}' formatted result: ${JSON.stringify(methodOutputs, null, this.options.jsonSpace)}`);
+          resolve(methodOutputs);
+          return;
         })
         .catch(error => {
-          const outputError = new Error(`[ethjs-query] while formatting outputs from RPC '${JSON.stringify(error, null, this.options.jsonSpace)}'`);
-          reject(outputError);
-          return;
+          reject(error);
         });
       });
     }
