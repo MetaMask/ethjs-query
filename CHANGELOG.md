@@ -1,3 +1,9 @@
+# 0.5.0 -- change to error reporting
+
+1. Removed logic that was catching too broadly and applying an erroneous "formatting error" error.
+2. Removed logic that was rethrowing newly constructed Error objects that stripped stack traces relevant to the actual error. 
+3. Changes to lint configuration
+
 # 0.4.0 -- maintenance update
 
 1. Renamed to @metamask/ethjs-query
