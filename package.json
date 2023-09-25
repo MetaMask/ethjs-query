@@ -196,6 +196,14 @@
         2,
         "always-multiline"
       ],
+      "indent": [
+        2,
+        2,
+        {
+          "MemberExpression": 0,
+          "SwitchCase": 1
+        }
+      ],
       "import/no-unresolved": 2,
       "max-len": 0,
       "newline-per-chained-call": 0,
