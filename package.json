@@ -119,7 +119,6 @@
     }
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0",
     "ethjs-format": "0.2.7",
     "ethjs-rpc": "0.2.0",
     "promise-to-callback": "^1.0.0"
@@ -169,6 +168,9 @@
     "pre-commit": "1.1.3",
     "rimraf": "2.3.4",
     "webpack": "3.12.0"
+  },
+  "peerDependencies": {
+    "@babel/runtime": "^7.0.0"
   },
   "lint-staged": {
     "lint:eslint": "*.js"
