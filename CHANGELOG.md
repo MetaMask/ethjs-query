@@ -7,27 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [0.6.0]
-### Uncategorized
-- chore: format CHANGELOG.md
-- chore: add .nvmrc set to v12
-- ci: add create-release-pr workflow
-- deps: ethjs-rpc@0.2.0 -> @metamask/ethjs-rpc@^0.3.0 ([#22](https://github.com/MetaMask/ethjs-query/pull/22))
-- devDeps: upgrade babel@6.18.0->7.20.5 ([#10](https://github.com/MetaMask/ethjs-query/pull/10))
-- devDeps: upgrade webpack@2.1.0-beta.15 -> ^3.12.0 ([#9](https://github.com/MetaMask/ethjs-query/pull/9))
-- v0.5.0 ([#20](https://github.com/MetaMask/ethjs-query/pull/20))
-- fixes lint and removes dist from source control ([#21](https://github.com/MetaMask/ethjs-query/pull/21))
-- eslint update ([#8](https://github.com/MetaMask/ethjs-query/pull/8))
-- Avoid sentry batching together of errors by not rethrowing errors with a new error message.  ([#16](https://github.com/MetaMask/ethjs-query/pull/16))
-- missing publishConfig ([#17](https://github.com/MetaMask/ethjs-query/pull/17))
-- build diff
-- @metamask/ethjs-query v0.4.0
-- npm v5 compat: rename prepare script to publish
-- deprecate nodejs <8.17, npm<6
-- Remove Travis and coveralls.io integrations
-- devDeps: remove legacy check-es3-syntax-cli
-- remove eth_getCompilers test
-- devDeps/test: ganache-core->ganache-cli
-- ci: Add Github Actions workflows
+### Changed
+- **BREAKING**: `@babel/runtime@^7.0.0` is now a peerDependency ([#10](https://github.com/MetaMask/ethjs-query/pull/10))
+- Update from `ethjs-rpc@0.2.0` to `@metamask/ethjs-rpc@^0.3.0` ([#22](https://github.com/MetaMask/ethjs-query/pull/22))
+
+### Removed
+- Removed implicit peerDependency `babel-runtime` ([#10](https://github.com/MetaMask/ethjs-query/pull/10))
 
 ## [0.5.0]
 ### Changed
