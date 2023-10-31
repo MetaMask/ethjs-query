@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update from `ethjs-rpc@0.2.0` to `@metamask/ethjs-rpc@^0.3.0` ([#22](https://github.com/MetaMask/ethjs-query/pull/22))
 
 ### Removed
-- Removed implicit peerDependency `babel-runtime` ([#10](https://github.com/MetaMask/ethjs-query/pull/10))
+- Remove implicit peerDependency `babel-runtime` ([#10](https://github.com/MetaMask/ethjs-query/pull/10))
 
 ## [0.5.0]
 ### Changed
