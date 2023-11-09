@@ -81,6 +81,23 @@ describe('ethjs-query', () => {
       });
     });
 
+    it('should parse RPC errors from the ethjs-rpc library', (done) => {
+      const eth = new Eth({
+        sendAsync: () => {
+          const payloadError = new Error('rpc error');
+          // ethjs-rpc attaches the RPC error field as a "value" property on the Error object
+          payloadError.value = { code: -32600, message: 'msg from rpc' };
+          throw payloadError;
+        },
+      }); // eslint-disable-line
+
+      eth.accounts((err, result) => {
+        assert.equal(result, null);
+        assert.equal(err.message.includes('msg from rpc'), true);
+        done();
+      });
+    });
+
     it('should handle empty getTransactionReceipt', (done) => {
       const eth = new Eth(provider); // eslint-disable-line
 
