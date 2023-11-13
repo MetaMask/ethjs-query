@@ -7,8 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [0.7.0]
-### Uncategorized
-- deps: ethjs-format@0.2.7 -> @metamask/ethjs-format@^0.3.0  ([#26](https://github.com/MetaMask/ethjs-query/pull/26))
+### Changed
+- Update from `ethjs-format@0.2.7` to `@metamask/ethjs-format@^0.3.0` ([#26](https://github.com/MetaMask/ethjs-query/pull/26))
+  - Users are encouraged to switch peer packages from `ethjs-*` to `@metamask/ethjs-*` where available.
 
 ## [0.6.0]
 ### Changed
