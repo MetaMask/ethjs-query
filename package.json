@@ -163,7 +163,7 @@
     "hard-rejection": "^2.1.0",
     "istanbul": "0.4.5",
     "json-loader": "^0.5.7",
-    "mocha": "^7.2.0",
+    "mocha": "^10.2.0",
     "pre-commit": "^1.2.2",
     "rimraf": "^3.0.2",
     "webpack": "^3.12.0"
