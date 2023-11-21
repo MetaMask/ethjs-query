@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.1]
+### Uncategorized
+- chore: add .nvmrc set to v12
+- docs: change examples to use @metamask/ forks of ethjs- packages ([#29](https://github.com/MetaMask/ethjs-query/pull/29))
+- deps: ethjs-format@0.2.7 -> @metamask/ethjs-format@^0.2.8  ([#26](https://github.com/MetaMask/ethjs-query/pull/26))
+- deps: ethjs-rpc@0.2.0 -> @metamask/ethjs-rpc@^0.3.0 ([#22](https://github.com/MetaMask/ethjs-query/pull/22))
+- chore: format CHANGELOG.md
+- ci: fix publishing for npm package
+- ci: run build and test on newer node version, lint only on 12
+
 ## [0.5.0]
 ### Changed
 - change to error reporting
@@ -153,7 +163,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/MetaMask/ethjs-query/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/MetaMask/ethjs-query/compare/v0.5.1...HEAD
+[0.5.1]: https://github.com/MetaMask/ethjs-query/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/MetaMask/ethjs-query/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/MetaMask/ethjs-query/compare/v0.3.8...v0.4.0
 [0.3.8]: https://github.com/MetaMask/ethjs-query/compare/v0.3.7...v0.3.8
