@@ -7,14 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [0.5.1]
-### Uncategorized
-- chore: add .nvmrc set to v12
-- docs: change examples to use @metamask/ forks of ethjs- packages ([#29](https://github.com/MetaMask/ethjs-query/pull/29))
-- deps: ethjs-format@0.2.7 -> @metamask/ethjs-format@^0.2.8  ([#26](https://github.com/MetaMask/ethjs-query/pull/26))
-- deps: ethjs-rpc@0.2.0 -> @metamask/ethjs-rpc@^0.3.0 ([#22](https://github.com/MetaMask/ethjs-query/pull/22))
-- chore: format CHANGELOG.md
-- ci: fix publishing for npm package
-- ci: run build and test on newer node version, lint only on 12
+### Changed
+- Update from `ethjs-format@0.2.7`to `@metamask/ethjs-format@^0.2.8` ([#26](https://github.com/MetaMask/ethjs-query/pull/26))
+- Update from `ethjs-rpc@0.2.0` to `@metamask/ethjs-rpc@^0.3.0` ([#22](https://github.com/MetaMask/ethjs-query/pull/22))
+- docs: change examples to use `@metamask/` forks of `ethjs-` packages ([#29](https://github.com/MetaMask/ethjs-query/pull/29))
 
 ## [0.5.0]
 ### Changed
