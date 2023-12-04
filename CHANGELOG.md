@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.5.3]
 ### Fixed
-- Dependency range of `@metamask/ethjs-rpc` is now valid semver. This fixes an issues that affected yarn berry users. ([#40](https://github.com/MetaMask/ethjs-query/pull/40))
+- Dependency range of `@metamask/ethjs-rpc` is now valid semver ([#40](https://github.com/MetaMask/ethjs-query/pull/40))
+  - This fixes an issues that affected yarn berry users.
 
 ## [0.5.2]
 ### Changed
