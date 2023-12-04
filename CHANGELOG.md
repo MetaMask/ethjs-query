@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.3]
+### Fixed
+- Dependency range of `@metamask/ethjs-rpc` is now valid semver ([#40](https://github.com/MetaMask/ethjs-query/pull/40))
+  - This fixes an issues that affected yarn berry users.
+
 ## [0.5.2]
 ### Changed
 - Bump `@metamask/ethjs-format` from `^0.2.8` to `^0.2.9` ([#38](https://github.com/MetaMask/ethjs-query/pull/38))
@@ -167,7 +172,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/MetaMask/ethjs-query/compare/v0.5.2...HEAD
+[Unreleased]: https://github.com/MetaMask/ethjs-query/compare/v0.5.3...HEAD
+[0.5.3]: https://github.com/MetaMask/ethjs-query/compare/v0.5.2...v0.5.3
 [0.5.2]: https://github.com/MetaMask/ethjs-query/compare/v0.5.1...v0.5.2
 [0.5.1]: https://github.com/MetaMask/ethjs-query/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/MetaMask/ethjs-query/compare/v0.4.0...v0.5.0

@@ -1,6 +1,6 @@
 {
   "name": "@metamask/ethjs-query",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "A simple query layer for the Ethereum RPC.",
   "main": "lib/index.js",
   "files": [
