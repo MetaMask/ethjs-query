@@ -6,6 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.1]
+### Uncategorized
+- Bump decode-uri-component from 0.2.0 to 0.2.2
+- Bump underscore and js-yaml
+- Bump the npm_and_yarn group group with 1 update
+- style
+- chore: sync CHANGELOG.md with 0.5.x backports
+- ci: run build and test on newer node version, lint only on 12 ([#34](https://github.com/MetaMask/ethjs-query/pull/34))
+- ci: fix publishing for npm package
+- 0.7.0 ([#28](https://github.com/MetaMask/ethjs-query/pull/28))
+- Update devDependencies ([#27](https://github.com/MetaMask/ethjs-query/pull/27))
+- 0.6.0 ([#25](https://github.com/MetaMask/ethjs-query/pull/25))
+- chore: format CHANGELOG.md
+- chore: add .nvmrc set to v12
+- ci: add create-release-pr workflow
+- devDeps: upgrade webpack@2.1.0-beta.15 -> ^3.12.0 ([#9](https://github.com/MetaMask/ethjs-query/pull/9))
+
 ## [0.7.0]
 ### Changed
 - Update from `ethjs-format@0.2.7` to `@metamask/ethjs-format@^0.3.0` ([#26](https://github.com/MetaMask/ethjs-query/pull/26))
@@ -185,7 +202,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/MetaMask/ethjs-query/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/MetaMask/ethjs-query/compare/v0.7.1...HEAD
+[0.7.1]: https://github.com/MetaMask/ethjs-query/compare/v0.7.0...v0.7.1
 [0.7.0]: https://github.com/MetaMask/ethjs-query/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/MetaMask/ethjs-query/compare/v0.5.3...v0.6.0
 [0.5.3]: https://github.com/MetaMask/ethjs-query/compare/v0.5.2...v0.5.3
