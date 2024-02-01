@@ -7,21 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [0.7.1]
-### Uncategorized
-- Bump decode-uri-component from 0.2.0 to 0.2.2
-- Bump underscore and js-yaml
-- Bump the npm_and_yarn group group with 1 update
-- style
-- chore: sync CHANGELOG.md with 0.5.x backports
-- ci: run build and test on newer node version, lint only on 12 ([#34](https://github.com/MetaMask/ethjs-query/pull/34))
-- ci: fix publishing for npm package
-- 0.7.0 ([#28](https://github.com/MetaMask/ethjs-query/pull/28))
-- Update devDependencies ([#27](https://github.com/MetaMask/ethjs-query/pull/27))
-- 0.6.0 ([#25](https://github.com/MetaMask/ethjs-query/pull/25))
-- chore: format CHANGELOG.md
-- chore: add .nvmrc set to v12
-- ci: add create-release-pr workflow
-- devDeps: upgrade webpack@2.1.0-beta.15 -> ^3.12.0 ([#9](https://github.com/MetaMask/ethjs-query/pull/9))
+### Changed
+- Update `@metamask/ethjs-rpc` from `^0.3.1` to `^0.4.0` ([#43](https://github.com/MetaMask/ethjs-query/pull/43))
+  - Package migrated from babel 6 to 7
 
 ## [0.7.0]
 ### Changed
